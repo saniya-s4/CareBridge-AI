@@ -52,9 +52,8 @@ Import the repo into Vercel, add `GEMINI_API_KEY` as an environment variable, an
 
 ## 🎬 Demo
 
-1. Click **Try Demo Report**
-2. Open **Compare & Trends** to see changes over time
-3. Open **Doctor Visit Prep** to get the checklist
+1. Click :https://carebridge-ai-saniya.vercel.app/
+   
 
 ## 🌱 Future Scope
 
