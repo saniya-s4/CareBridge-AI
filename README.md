@@ -2,56 +2,64 @@
 
 > **Understand your reports. Prepare for better conversations with your doctor.**
 
-CareBridge AI is an AI-powered health report understanding and doctor-visit preparation assistant. It helps users turn complex medical reports into structured information, understand important results in simple language, compare reports over time, visualize trends, and prepare questions for a healthcare professional.
+CareBridge AI turns complex medical lab reports into structured data, plain-language explanations, trend charts, and a doctor-visit checklist.
 
-> ⚠️ **Important:** CareBridge AI is an educational and decision-support prototype. It does not diagnose diseases, prescribe treatments, recommend medication changes, or replace professional medical advice.
+> ⚠️ Educational prototype. It does not diagnose, prescribe, or replace professional medical advice.
+
+## ✨ Features
+
+- 📄 **Report Analysis** – upload a file or paste text; extracts test name, value, unit, reference range, and status (missing info is marked *Unknown*, never invented)
+- 📊 **Comparison** – compare reports across dates (e.g. Hemoglobin 11.2 → 10.2 g/dL, *Decreased*)
+- 📈 **Trends** – interactive charts for recurring biomarkers
+- 🩺 **Doctor Visit Prep** – key observations, questions to ask, things to bring, copy/print checklist
+- 🎯 **Demo Mode** – fictional sample reports, no personal data needed
+- 🔒 **Privacy First** – data stays in your browser (localStorage)
+
+## 🛠️ Tech Stack
+
+React + Vite · Tailwind CSS · Recharts · Lucide React · Google Gemini API · Vercel Serverless Functions
+
+## 🛡️ Responsible AI
+
+- No diagnosis, prescriptions, or treatment advice
+- Neutral wording: *Increased / Decreased / Similar*
+- Extracted data is kept separate from AI explanations
+- Safety disclaimer shown on every screen
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/saniya-s4/CareBridge-AI.git
+cd CareBridge-AI
+npm install
+```
+
+Create a `.env` file:
+
+```
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:5173`. Never commit `.env`.
+
+## ☁️ Deployment
+
+Import the repo into Vercel, add `GEMINI_API_KEY` as an environment variable, and deploy.
+
+## 🎬 Demo
+
+1. Click **Try Demo Report**
+2. Open **Compare & Trends** to see changes over time
+3. Open **Doctor Visit Prep** to get the checklist
+
+## 🌱 Future Scope
+
+FHIR/EHR integration · Multilingual explanations · Voice-guided prep · Wearable data correlation
 
 ---
 
-## 🩺 Problem
-
-Medical reports often contain complex terminology, abbreviations, numbers, units, and reference ranges that are difficult for non-medical users to understand.
-
-Users may also have multiple reports from different dates but no simple way to:
-
-- Understand what individual test results mean
-- Compare previous and current reports
-- Track changes over time
-- Identify which results may be worth discussing
-- Prepare useful questions before a doctor appointment
-
-CareBridge AI addresses this gap by creating a structured workflow from **report understanding to doctor-visit preparation**.
-
----
-
-## 💡 Solution
-
-CareBridge AI transforms medical reports into an easy-to-follow health information workflow:
-
-**Medical Report → Structured Data → AI Explanation → Comparison → Trends → Doctor Preparation**
-
-The application focuses on helping users better understand their existing reports and have more informed conversations with healthcare professionals.
-
----
-
-## ✨ Key Features
-
-### 📄 AI Medical Report Analysis
-
-Users can upload supported documents or paste report text for analysis.
-
-CareBridge extracts structured information such as:
-
-- Test name
-- Result value
-- Unit
-- Reference range
-- Status
-
-Example:
-
-```text
-Hemoglobin
-11.2 g/dL
-Reference Range: 12.0–16.0 g/dL
-Status: Low
+*Built for hackathon demonstration. Always consult a qualified healthcare professional for medical decisions.*
