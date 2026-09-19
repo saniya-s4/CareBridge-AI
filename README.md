@@ -2,56 +2,48 @@
 
 > **Understand your reports. Prepare for better conversations with your doctor.**
 
-CareBridge AI is an AI-powered health report understanding and doctor-visit preparation assistant.
+CareBridge AI is an AI-powered health report understanding and doctor-visit preparation assistant. It helps users turn complex medical reports into structured information, understand important results in simple language, compare reports over time, visualize trends, and prepare questions for a healthcare professional.
 
-It transforms complex medical reports into structured information, explains results in simple language, compares reports over time, visualizes trends, and helps users prepare meaningful questions for a healthcare professional.
-
-> ⚠️ **Important:** CareBridge AI is an educational and decision-support prototype. It does not diagnose diseases, prescribe treatments, or replace professional medical advice.
+> ⚠️ **Important:** CareBridge AI is an educational and decision-support prototype. It does not diagnose diseases, prescribe treatments, recommend medication changes, or replace professional medical advice.
 
 ---
 
-## 🩺 The Problem
+## 🩺 Problem
 
-Medical reports can be difficult to understand because they contain:
+Medical reports often contain complex terminology, abbreviations, numbers, units, and reference ranges that are difficult for non-medical users to understand.
 
-- Complex medical terms and abbreviations
-- Multiple test values, units, and reference ranges
-- Reports scattered across different dates
-- No simple way to compare previous and current results
-- Limited time during doctor appointments
+Users may also have multiple reports from different dates but no simple way to:
 
-As a result, people may understand individual numbers but still struggle to understand how their reports have changed over time or what they should discuss with their doctor.
+- Understand what individual test results mean
+- Compare previous and current reports
+- Track changes over time
+- Identify which results may be worth discussing
+- Prepare useful questions before a doctor appointment
+
+CareBridge AI addresses this gap by creating a structured workflow from **report understanding to doctor-visit preparation**.
 
 ---
 
-## 💡 Our Solution
+## 💡 Solution
 
-**CareBridge AI** creates a structured workflow from medical report → understanding → comparison → doctor preparation.
+CareBridge AI transforms medical reports into an easy-to-follow health information workflow:
 
-### It can:
+**Medical Report → Structured Data → AI Explanation → Comparison → Trends → Doctor Preparation**
 
-1. 📄 **Analyze medical reports**
-2. 🧩 **Extract structured test information**
-3. 💬 **Explain results in plain language**
-4. 📊 **Compare multiple reports**
-5. 📈 **Visualize health trends**
-6. 🩺 **Generate questions for a healthcare professional**
-7. 📝 **Create a doctor-visit preparation checklist**
-
-The goal is not to replace a doctor, but to help users arrive at a medical conversation better prepared.
+The application focuses on helping users better understand their existing reports and have more informed conversations with healthcare professionals.
 
 ---
 
 ## ✨ Key Features
 
-### 📄 AI Report Analysis
+### 📄 AI Medical Report Analysis
 
-Upload a supported report or paste its text.
+Users can upload supported documents or paste report text for analysis.
 
-CareBridge extracts:
+CareBridge extracts structured information such as:
 
 - Test name
-- Value
+- Result value
 - Unit
 - Reference range
 - Status
@@ -61,5 +53,5 @@ Example:
 ```text
 Hemoglobin
 11.2 g/dL
-Reference: 12.0–16.0 g/dL
+Reference Range: 12.0–16.0 g/dL
 Status: Low
